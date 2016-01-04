@@ -20,11 +20,10 @@ nodejs::prefix: '/opt'
 nodejs::provider: 'nodenv'
 nodejs::user: "%{::id}"
 
-nodejs::build::ensure: '80cb791b63debce35110b55590cf3b9f953d72db'
+nodejs::build::ensure: 'd409044c038f72203268479c9b0186c1b82ad2fa'
 nodejs::build::prefix: "%{hiera('nodejs::prefix')}/node-build"
 nodejs::build::user: "%{hiera('nodejs::user')}"
 
 nodejs::nodenv::ensure: v0.3.0
 nodejs::nodenv::prefix: "%{hiera('nodejs::prefix')}/nodenv"
 nodejs::nodenv::user: "%{hiera('nodejs::user')}"
-
